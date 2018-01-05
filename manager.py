@@ -106,7 +106,7 @@ def start_server(args):
     app.logger.info('server start at {0}:{1}'.format(
         args.server_host, args.server_port
     ))
-    IOLoop.instance().start()
+    IOLoop.current().start()
 
 
 def main(args):
