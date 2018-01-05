@@ -17,7 +17,9 @@ class CommonConfig(object):
     }
     # web应用配置
     APP_SETTINGS = {}
+
     # 数据库连接字符串(供alembic使用)
+    SQLALCHEMY_URI = ''
 
 
 class DevelopmentConfig(CommonConfig):
